@@ -42,7 +42,15 @@ console.log(computerSelection);
 
      /* ------ The outcomes of the game ----- */
 
-     console.log(playRound(playerSelection, computerSelection))
+// console.log(playRound(playerSelection, computerSelection));
+ const fiveRound = playRound(playerSelection,computerSelection);
+function game(){
+    for(let i = 0; i < 5; i++){
+
+    }
+}
+ game();
+     
 
 
       
