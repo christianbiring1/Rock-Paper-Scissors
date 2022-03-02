@@ -8,7 +8,7 @@ console.log(computerPlay(concepts));
 
   /* --- The f(x) that plays a single round --- */
 
-  function playSingleRound(playerSelection, computerSelection){
+  function playRound(playerSelection, computerSelection){
       if(playerSelection === computerSelection)
       return ('The game is tied! Immediately replay to break the tie...');
 
@@ -30,6 +30,14 @@ console.log(computerPlay(concepts));
     if(playerSelection === 'paper' && computerSelection === 'scissors')
     return ('You lose! Scissors beats Papper');
   }
+     /* ----- Function playerSelection ---- */
+
+     function playerSelection(){
+         userInput = window.prompt('Type in your choice!');
+         userInput.toLowerCase();
+         return userInput;
+     }
+     console.log(playerSelection());
 
 
       
