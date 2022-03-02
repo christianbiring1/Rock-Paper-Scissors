@@ -1,6 +1,6 @@
           /* ---- The game is going the computer, so creation of computerPlay function ---- */
 
-let concepts = ['Rock', 'Paper', 'Scissors'];
+let concepts = ['rock', 'paper', 'scissors'];
 function computerPlay(concepts){
     return concepts[Math.floor(Math.random() * concepts.length)];
 }
@@ -12,22 +12,24 @@ console.log(computerPlay(concepts));
       if(playerSelection === computerSelection)
       return ('The game is tied! Immediately replay to break the tie...');
 
-      if(playerSelection === 'Rock' && computerSelection === 'Paper')
+      if(playerSelection === 'rock' && computerSelection === 'paper')
       return ('You lose! Paper beats Rock');
 
-      if(playerSelection === 'Rock' && computerSelection === 'Scissors')
+      if(playerSelection === 'rock' && computerSelection === 'scissors')
     return ('You win! Rock beats Scissors');
 
-    if(playerSelection === 'Scissors' && computerSelection === 'Paper')
+    if(playerSelection === 'scissors' && computerSelection === 'paper')
     return ('You win! Scissors beats Paper');
 
-    if(playerSelection === 'Scissors' && computerSelection === 'Rock')
+    if(playerSelection === 'scissors' && computerSelection === 'rock')
     return ('You lose! Rock beats Scissors');
 
-    if(playerSelection === 'Paper' && computerSelection === 'Rock')
+    if(playerSelection === 'paper' && computerSelection === 'rock')
     return ('You win! Paper beats Rock');
-    
-    if(playerSelection === 'Paper' && computerSelection === 'Scissors')
+
+    if(playerSelection === 'paper' && computerSelection === 'scissors')
     return ('You lose! Scissors beats Papper');
   }
+
+
       
